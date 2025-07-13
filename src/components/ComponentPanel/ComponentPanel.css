@@ -1,0 +1,42 @@
+.component-panel-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.component-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.component-item {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  cursor: grab;
+  transition: all 0.2s ease;
+}
+
+.component-item:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.component-item.dragging {
+  opacity: 0.5;
+}
+
+.component-icon {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.component-label {
+  font-size: 14px;
+}

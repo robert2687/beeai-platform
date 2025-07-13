@@ -1,0 +1,41 @@
+.canvas-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.canvas-area {
+  flex: 1;
+  position: relative;
+  border: 2px dashed #ccc;
+  border-radius: 4px;
+  min-height: 500px;
+  background-color: #fafafa;
+}
+
+.canvas-over {
+  border-color: #3498db;
+  background-color: rgba(52, 152, 219, 0.05);
+}
+
+.empty-canvas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #999;
+  font-style: italic;
+}
+
+.canvas-item {
+  position: absolute;
+  cursor: move;
+  padding: 5px;
+  border: 1px solid transparent;
+}
+
+.canvas-item.selected {
+  border: 1px solid #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}

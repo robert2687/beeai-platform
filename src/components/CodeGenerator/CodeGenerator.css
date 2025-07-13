@@ -1,0 +1,74 @@
+.code-generator-container {
+  margin-top: 20px;
+  padding: 16px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+}
+
+.generate-prompt-button {
+  padding: 10px 16px;
+  background-color: #9b59b6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.generate-prompt-button:hover {
+  background-color: #8e44ad;
+}
+
+.generate-prompt-button:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+.prompt-container {
+  margin-top: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.prompt-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #ddd;
+}
+
+.prompt-header h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.copy-button {
+  padding: 6px 12px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.copy-button:hover {
+  background-color: #2980b9;
+}
+
+.prompt-content {
+  padding: 16px;
+  background-color: #f9f9f9;
+  white-space: pre-wrap;
+  font-family: monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  max-height: 300px;
+  overflow-y: auto;
+}

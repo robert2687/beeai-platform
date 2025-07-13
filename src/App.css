@@ -1,0 +1,44 @@
+/* Main layout using CSS Grid */
+.app-container {
+  display: grid;
+  grid-template-columns: 250px 1fr 300px;
+  grid-template-areas: "component-panel canvas properties-panel";
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.component-panel {
+  grid-area: component-panel;
+  background-color: #f5f5f5;
+  border-right: 1px solid #e0e0e0;
+  padding: 16px;
+  overflow-y: auto;
+}
+
+.canvas {
+  grid-area: canvas;
+  background-color: #ffffff;
+  padding: 20px;
+  overflow: auto;
+}
+
+.properties-panel {
+  grid-area: properties-panel;
+  background-color: #f5f5f5;
+  border-left: 1px solid #e0e0e0;
+  padding: 16px;
+  overflow-y: auto;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .app-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      "component-panel"
+      "canvas"
+      "properties-panel";
+  }
+}
